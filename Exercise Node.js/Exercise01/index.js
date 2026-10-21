@@ -44,17 +44,12 @@ app.put('/books/:id', (req,res)=>{
              bookUpdate.author = req.body.author;
        res.json(bookUpdate)
 })
-
-
 // delete route
 app.delete('/books/:id', (req,res)=>{
     const bookId = req.params.id
     books= books.filter(book=> book.id != req.params.id);
     res.send(`User ${bookId} Deleted Successfully`)
 })
-
-
-
 
 app.listen(PORT, () => {
   console.log(`Server is running at http://localhost:${PORT}`);
