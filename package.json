@@ -6,6 +6,7 @@
   "author": "Nur abdi",
   "type": "commonjs",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "nodemon index.js"
   },
